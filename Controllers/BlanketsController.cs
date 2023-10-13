@@ -20,13 +20,13 @@ namespace BloomiBlanket.Controllers
         }
 
         // GET: Blankets
-        
-        public async Task<IActionResult> Index(string blanketFabic, string searchString)
+        [HttpPost]
+        public string Index(string searchString, bool notUsed)
         {
-            IQueryable<string> fabricQuery = from m in _context.Blanket
-                                            orderby m.Fabric
-                                            select m.Fabric;
-
+            return "From [HttpPost]Index: filter on " + searchString;
+        }
+        public async Task<IActionResult> Index(string searchString)
+        {
             var blankets = from m in _context.Blanket
                          select m;
 
