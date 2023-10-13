@@ -1,28 +1,43 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+/* Custom Styles */
+body{
+    background-color: aquamarine;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+    font-family: 'Your Custom Font', sans-serif;
 }
 
 /* Provide sufficient contrast against white background */
 a {
-  color: #0366d6;
+    color: #FF5733; /* Custom color */
+    font-family: 'Your Custom Font', sans-serif;
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #008CBA; /* Custom color */
+    border-color: #007BAA;
+    font-family: 'Your Custom Font', sans-serif;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #008CBA; /* Custom color */
+    border-color: #007BAA;
+    font-family: 'Your Custom Font', sans-serif;
 }
+
+/* Other Custom Styles... */
+
+/* Add your custom styles here */
+
+
 
 /* Sticky footer styles
 -------------------------------------------------- */
