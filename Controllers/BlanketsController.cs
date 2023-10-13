@@ -20,9 +20,23 @@ namespace BloomiBlanket.Controllers
         }
 
         // GET: Blankets
-        public async Task<IActionResult> Index()
+        
+        public async Task<IActionResult> Index(string blanketFabic, string searchString)
         {
-            return View(await _context.Blanket.ToListAsync());
+            IQueryable<string> fabricQuery = from m in _context.Blanket
+                                            orderby m.Fabric
+                                            select m.Fabric;
+
+            var blankets = from m in _context.Blanket
+                         select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+
+            {
+                blankets = blankets.Where(s => s.Name.Contains(searchString));
+            }
+
+            return View(await blankets.ToListAsync());
         }
 
         // GET: Blankets/Details/5
