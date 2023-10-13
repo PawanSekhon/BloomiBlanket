@@ -50,7 +50,7 @@ to make my code error free so that i can do validaion as it was the only step i 
  did validation
  run my code 
  update some css file with image 
- at last updated readme and submit it 
+ at last updated readme and submit it.
 
 
 
